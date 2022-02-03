@@ -13,12 +13,15 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     int i=0;
 
+    //double d = Double.parseDouble(mystring);
+    //string s = Double.toString(d);
+
     public void buttonPressed(View view){
         EditText nameEntered=(EditText)findViewById(R.id.nameEditText);
         String name =nameEntered.getEditableText().toString();
 
         EditText passwordEntered=(EditText)findViewById(R.id.passwordEditText);
-        Toast.makeText(this,"The Name is : "+name+" Singh",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"The Name is : "+name+" Singh ",Toast.LENGTH_LONG).show();
         Log.i("password - ",passwordEntered.toString());
         nameEntered.setText("");
         passwordEntered.setText((""));
